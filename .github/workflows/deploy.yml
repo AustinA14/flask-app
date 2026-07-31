@@ -21,7 +21,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./Cloud_App
           platforms: linux/amd64
           push: true
           tags: austina14/flask-app:latest
